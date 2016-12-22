@@ -66,6 +66,7 @@ void shopTrade(RESTAURANT rest){
 			while(1){
 				if(bankTrade("abc")){
 					printf("交易成功\");
+					return;       
 				}else{
 					printf("交易失敗");
 				}	
