@@ -23,14 +23,14 @@ void output(RESTAURANT* shop){
 	system("CLS");
 	int count=1;	
 	
-	printf("©±¦W:%s\n\n",shop->name);
-	printf("¦a§}:%s\n\n",shop->address);	
-	printf("µæ³æ:%s\n",shop->menu);	
-	printf("©±®a¹q¸Ü:%s\n\n",shop->phone);
+	printf("åº—å:%s\n\n",shop->name);
+	printf("åœ°å€:%s\n\n",shop->address);	
+	printf("èœå–®:%s\n",shop->menu);	
+	printf("åº—å®¶é›»è©±:%s\n\n",shop->phone);
 	
 	while(shop->next!=NULL){
 		
-		printf("«È¤áµû½×%d:%s\n",count,shop->comment);
+		printf("å®¢æˆ¶è©•è«–%d:%s\n",count,shop->comment);
 		count++;
 		shop=shop->next;
 	}
@@ -54,37 +54,37 @@ int main(void){
 	char comment[100]={},temp;
 	
 	RESTAURANT *sengi=getnode();
-	strcpy(sengi->address,"407¥x¤¤¥«¦è¤Ù°Ï¦è¦wµó200¸¹");
-	strcpy(sengi->menu,"±Æ°©¶º 75$\nÂû±Æ¶º 75$\nÂû»L¶º 75$\nªoÂû»L¶º 75$\n©Mµæ¶º 50$\n");
-	strcpy(sengi->name,"´Ë°O«K·í©±");
+	strcpy(sengi->address,"4087å°ä¸­å¸‚è¥¿å±¯å€è¥¿å®‰è¡—200è™Ÿ");
+	strcpy(sengi->menu,"æ’éª¨é£¯ 75$\né›æ’é£¯ 75$\né›è…¿é£¯ 75$\næ²¹é›è…¿é£¯ 75$\nå’Œèœé£¯ 50$\n");
+	strcpy(sengi->name,"æ£®è¨˜ä¾¿ç•¶åº—");
 	strcpy(sengi->phone,"04-9487948");
 	
 	RESTAURANT *mama=getnode();
-	strcpy(mama->address,"407¥x¤¤¥«¦è¤Ù°Ï¦è¦wµó201¸¹");
-	strcpy(mama->menu,"­»¸z³Î¥] 35$\n½G¦×³Î¥] 35$\n¤­ªá¦×³Î¥] 35$\n°ö®Ú³Î¥] 35$\n½Ş±Æ³Î¥] 35$\n");
-	strcpy(mama->name,"­J¶ı¶ı³Î¥]");
+	strcpy(mama->address,"4087å°ä¸­å¸‚è¥¿å±¯å€è¥¿å®‰è¡—201è™Ÿ");
+	strcpy(mama->menu,"é¦™è…¸å‰²åŒ… 35$\nç˜¦è‚‰å‰²åŒ… 35$\näº”èŠ±è‚‰å‰²åŒ… 35$\nåŸ¹æ ¹å‰²åŒ… 35$\nè±¬æ’å‰²åŒ… 35$\n");
+	strcpy(mama->name,"èƒ¡åª½åª½å‰²åŒ…");
 	strcpy(mama->phone,"04-0920000");
 	
 	RESTAURANT *mc=getnode();
-	strcpy(mc->address,"407¥x¤¤¥«¦è¤Ù°Ï¦è¦wµó202¸¹");
-	strcpy(mc->menu,"³Á­»Âû 39$\n¥d©ÔÂû 39$\n³Á­»³½ 39$\n«l»¶Âû»L³ù39$\nªO¯NÂû»L³ù 39$\n");
-	strcpy(mc->name,"³Á·í³Ò");	
+	strcpy(mc->address,"4087å°ä¸­å¸‚è¥¿å±¯å€è¥¿å®‰è¡—202è™Ÿ");
+	strcpy(mc->menu,"éº¥é¦™é› 39$\nå¡æ‹‰é› 39$\néº¥é¦™é­š 39$\nå‹è¾£é›è…¿å ¡39$\næ¿çƒ¤é›è…¿å ¡ 39$\n");
+	strcpy(mc->name,"éº¥ç•¶å‹");	
 	strcpy(mc->phone,"04-4066688");
 	 
 	while(1){	
 	
-	    printf("¿é¤J±ı¨Ï¥Îªº¥\\¯à:\nA=µoªíµû½×\nB=¬d¸ß©±®a¸ê®Æ\nC=ÀH¾÷·j´M©±®a\nD=½u¤W¥I¶O\nE=Â÷¶}µ{¦¡\n\n¿é¤J¿ï³æ:"); 
+	    printf("è¼¸å…¥æ¬²ä½¿ç”¨çš„åŠŸ\èƒ½:\nA=ç™¼è¡¨è©•è«–\nB=æŸ¥è©¢åº—å®¶è³‡æ–™\nC=éš¨æ©Ÿæœå°‹åº—å®¶\nD=ç·šä¸Šä»˜è²»\nE=é›¢é–‹ç¨‹å¼\n\nè¼¸å…¥é¸å–®:"); 
 	    scanf(" %c",&temp);
 	 switch(temp)
 	  {
 	    	case 'A': case 'a':
 	    		system("CLS");
-	    		printf("©±®a¦Cªí:\n1.´Ë°O«K·í©±\n2.­J¶ı¶ı³Î¥]\n3.³Á·í³Ò\n\n\n½Ğ¿é¤J§A­nÅã¥Üªº©±®a¸ê°T¥N½X:");
+	    		printf("åº—å®¶åˆ—è¡¨:\n1.æ£®è¨˜ä¾¿ç•¶åº—\n2.èƒ¡åª½åª½å‰²åŒ…\n3.éº¥ç•¶å‹\n\n\nè«‹è¼¸å…¥ä½ è¦é¡¯ç¤ºçš„åº—å®¶è³‡è¨Šä»£ç¢¼:");
 	    		scanf("%d",&choose);
-	    		printf("¿é¤Jµû½×:");
+	    		printf("è¼¸å…¥è©•è«–:");
 	    		scanf("%s",&comment);
 	    		system("CLS");
-	    		printf("µû½×¦¨¥\\\n\n\n\n");
+	    		printf("è©•è«–æˆåŠŸ\\n\n\n\n");
 	    		if(choose==1)
 	    	        addcomment(sengi,comment);
 
@@ -95,12 +95,12 @@ int main(void){
 		         else
 		         {
 		         	system("CLS");
-		         	printf("¿é¤J©±®a¥N½X¿ù»~\n\n");
+		         	printf("è¼¸å…¥åº—å®¶ä»£ç¢¼éŒ¯èª¤\n\n");
 				 }
 	    		break;
 	        case 'B': case 'b':
 	        	 system("CLS");
-	    		 printf("©±®a¦Cªí:\n1.´Ë°O«K·í©±\n2.­J¶ı¶ı³Î¥]\n3.³Á·í³Ò\n\n\n½Ğ¿é¤J§A­nÅã¥Üªº©±®a¸ê°T¥N½X:");
+	    		 printf("åº—å®¶åˆ—è¡¨:\n1.æ£®è¨˜ä¾¿ç•¶åº—\n2.èƒ¡åª½åª½å‰²åŒ…\n3.éº¥ç•¶å‹\n\n\nè«‹è¼¸å…¥ä½ è¦é¡¯ç¤ºçš„åº—å®¶è³‡è¨Šä»£ç¢¼:");
 	             scanf("%d",&choose);
 	             if(choose==1)	
 	    	        output(sengi);
@@ -111,7 +111,7 @@ int main(void){
 		         else
 		         {
 		         	system("CLS");
-		         	printf("¿é¤J©±®a¥N½X¿ù»~\n\n");
+		         	printf("è¼¸å…¥åº—å®¶ä»£ç¢¼éŒ¯èª¤\n\n");
 				 }      
 	    		break;
 	    	case 'C': case 'c':
