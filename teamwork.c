@@ -74,6 +74,7 @@ int main(void){
 	while(1){	
 	
 	    printf("輸入欲使用的功\能:\nA=發表評論\nB=查詢店家資料\nC=隨機搜尋店家\nD=線上付費\nE=離開程式\n\n輸入選單:"); 
+
 	    scanf(" %c",&temp);
 	 switch(temp)
 	  {
@@ -87,7 +88,6 @@ int main(void){
 	    		printf("評論成功\\n\n\n\n");
 	    		if(choose==1)
 	    	        addcomment(sengi,comment);
-
 	             else if(choose==2)	
 	    	        addcomment(mama,comment);
 		         else if(choose==3)
@@ -122,7 +122,7 @@ int main(void){
 	    		break;		
 	    	case 'E': case 'e':
 	    		return 0;
-	    		break;	
+	    		break;
 	   }
 	    
 
