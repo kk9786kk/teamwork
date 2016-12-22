@@ -48,6 +48,34 @@ void addcomment(RESTAURANT *shop,char *newcomment){
 	shop->next=getnode();
 }
 
+int checkQR(char *QR){
+	return 1;
+}
+
+char* scanQR(){
+	return "abcde";
+}
+
+int bankTrade(char *account){
+	return 1;
+}
+
+void shopTrade(RESTAURANT rest){
+	while(1){
+		if(scanQR()){
+			while(1){
+				if(bankTrade("abc")){
+					printf("交易成功\");
+				}else{
+					printf("交易失敗");
+				}	
+			}						
+		}else{
+			printf("掃描失敗");
+		}
+	}
+}
+
 int main(void){
 	
 	int choose=4; 
